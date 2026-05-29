@@ -42,7 +42,7 @@ npm run dev
 上传一张血检报告图片，AI 自动完成从数据提取到健康解读的全流程：
 
 <div align="center">
-<img src="picture/demo.png" alt="功能演示" width="680" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/demo.png" alt="功能演示" width="680" />
 </div>
 
 | 步骤 | 说明 |
@@ -55,7 +55,7 @@ npm run dev
 ### 📱 功能模块一览
 
 <div align="center">
-<img src="picture/features.png" alt="功能模块" width="780" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/features.png" alt="功能模块" width="780" />
 </div>
 
 | 功能模块 | 说明 |
@@ -78,7 +78,7 @@ npm run dev
 #### 🏠 首页 (Landing)
 
 <div align="center">
-<img src="picture/首页.png" alt="首页" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/%E9%A6%96%E9%A1%B5.png" alt="首页" width="800" />
 </div>
 
 应用入口首页，展示核心价值主张「Understand your lab report in plain language」，包含 AI 功能徽章、CTA 按钮组及实时数据预览卡片。
@@ -88,7 +88,7 @@ npm run dev
 #### 📊 健康仪表盘 (Dashboard)
 
 <div align="center">
-<img src="picture/Overview.png" alt="仪表盘" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/Overview.png" alt="仪表盘" width="800" />
 </div>
 
 综合健康评分、各器官系统状态概览，清晰展示指标改善/稳定/需关注的趋势。
@@ -98,17 +98,29 @@ npm run dev
 #### 📋 报告详情 (ReportDetail)
 
 <div align="center">
-<img src="picture/1.png" alt="报告详情" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/1.png" alt="报告详情-第1页" width="800" />
 </div>
 
 每项生物标志物的详细数据卡片，包含：检测值、参考范围、健康状态标签（正常/临界/异常）及 AI 生成的个人化解读。
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/2.png" alt="报告详情-第2页" width="800" />
+</div>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/3.png" alt="报告详情-第3页" width="800" />
+</div>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/4.png" alt="报告详情-第4页" width="800" />
+</div>
 
 ---
 
 #### 📈 历史趋势 (Timeline)
 
 <div align="center">
-<img src="picture/Timeline.png" alt="历史趋势" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/Timeline.png" alt="历史趋势" width="800" />
 </div>
 
 支持切换不同指标、多报告对比，直观呈现各项指标在时间轴上的变化。
@@ -118,7 +130,7 @@ npm run dev
 #### 🗺️ 器官地图 (Organ Map)
 
 <div align="center">
-<img src="picture/Organ Map.png" alt="器官地图" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/Organ%20Map.png" alt="器官地图" width="800" />
 </div>
 
 以人体示意图为载体，按器官系统分类展示相关指标，点击器官即可查看其健康状态。
@@ -128,7 +140,7 @@ npm run dev
 #### 💡 AI 解读 (AI Insights)
 
 <div align="center">
-<img src="picture/AI Insights.png" alt="AI 解读" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/AI%20Insights.png" alt="AI 解读" width="800" />
 </div>
 
 基于大语言模型，对整体健康状况进行通俗语言分析，并提供可操作的健康建议。
@@ -138,7 +150,7 @@ npm run dev
 #### 📁 报告列表 (Reports)
 
 <div align="center">
-<img src="picture/Reports.png" alt="报告列表" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/Reports.png" alt="报告列表" width="800" />
 </div>
 
 集中管理所有已上传的历史报告，支持查看详情与删除操作。
@@ -148,7 +160,7 @@ npm run dev
 #### 🔒 隐私政策 (Privacy)
 
 <div align="center">
-<img src="picture/Privacy.png" alt="隐私政策" width="800" />
+<img src="https://raw.githubusercontent.com/dakjdakd/healthlens-ai/main/picture/Privacy.png" alt="隐私政策" width="800" />
 </div>
 
 所有报告数据均存储在浏览器 `localStorage` 中，完全本地化处理，不会上传至任何服务器。
