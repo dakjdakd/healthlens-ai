@@ -7,7 +7,6 @@
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&labelColor=1E293B)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&labelColor=1E293B)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&labelColor=1E293B)](https://vitejs.dev)
-[![豆包](https://img.shields.io/badge/AI-豆包%20(Doubao)-FF6B6B?style=for-the-badge&logo=openai&labelColor=1E293B)](#ai-引擎)
 
 **上传血检报告图片，AI 自动提取指标数据并提供通俗易懂的健康解读**
 
@@ -19,7 +18,7 @@
 
 ## 🏠 在线体验
 
-> 💡 **无需 API Key** — 应用内置了丰富的演示数据（用户 Amelia），可直接体验所有功能。
+> 💡 **无需 API Key** — 应用内置了丰富的演示数据（用户 Amelia，2026年5月21日报告），可直接体验所有功能。
 
 👉 **项目地址：** [https://github.com/dakjdakd/healthlens-ai](https://github.com/dakjdakd/healthlens-ai)
 
@@ -38,7 +37,26 @@ npm run dev
 
 ## ✨ 功能介绍
 
-### 完整功能列表
+### 🔄 完整操作流程
+
+上传一张血检报告图片，AI 自动完成从数据提取到健康解读的全流程：
+
+<div align="center">
+<img src="picture/demo.png" alt="功能演示" width="680" />
+</div>
+
+| 步骤 | 说明 |
+|---|---|
+| **① 上传报告** | 拖拽或选择血检报告图片文件 |
+| **② AI 解析** | Gemini AI 自动识别并提取 14 项生物标志物数据 |
+| **③ 查看报告详情** | 每项指标的数值、参考范围、状态（正常/临界/异常）及通俗解释 |
+| **④ 历史与趋势** | 多报告时间轴折线图，直观展示指标变化趋势 |
+
+### 📱 功能模块一览
+
+<div align="center">
+<img src="picture/features.png" alt="功能模块" width="780" />
+</div>
 
 | 功能模块 | 说明 |
 |---|---|
@@ -53,7 +71,79 @@ npm run dev
 | ⚙️ **设置 (Settings)** | 管理个人信息、报告医院来源等 |
 | 🔒 **隐私政策 (Privacy)** | 隐私保护说明（所有数据均存储在本地 localStorage） |
 
-### 14 项追踪指标
+---
+
+### 📊 核心页面展示
+
+#### 🏠 首页 (Landing)
+
+<div align="center">
+<img src="picture/首页.png" alt="首页" width="800" />
+</div>
+
+---
+
+#### 📊 健康仪表盘 (Dashboard)
+
+<div align="center">
+<img src="picture/Overview.png" alt="仪表盘" width="800" />
+</div>
+
+综合健康评分、各器官系统状态概览，清晰展示指标改善/稳定/需关注的趋势。
+
+---
+
+#### 📈 历史趋势 (Timeline)
+
+<div align="center">
+<img src="picture/Timeline.png" alt="历史趋势" width="800" />
+</div>
+
+支持切换不同指标、多报告对比，直观呈现各项指标在时间轴上的变化。
+
+---
+
+#### 🗺️ 器官地图 (Organ Map)
+
+<div align="center">
+<img src="picture/Organ Map.png" alt="器官地图" width="800" />
+</div>
+
+以人体示意图为载体，按器官系统分类展示相关指标，点击器官即可查看其健康状态。
+
+---
+
+#### 💡 AI 解读 (AI Insights)
+
+<div align="center">
+<img src="picture/AI Insights.png" alt="AI 解读" width="800" />
+</div>
+
+基于 Gemini 大语言模型，对整体健康状况进行通俗语言分析，并提供可操作的健康建议。
+
+---
+
+#### 📁 报告列表 (Reports)
+
+<div align="center">
+<img src="picture/Reports.png" alt="报告列表" width="800" />
+</div>
+
+集中管理所有已上传的历史报告，支持查看详情与删除操作。
+
+---
+
+#### 🔒 隐私政策 (Privacy)
+
+<div align="center">
+<img src="picture/Privacy.png" alt="隐私政策" width="800" />
+</div>
+
+所有报告数据均存储在浏览器 `localStorage` 中，完全本地化处理，不会上传至任何服务器。
+
+---
+
+### 🩸 14 项追踪指标
 
 | 分类 | 指标 | 说明 |
 |---|---|---|
@@ -64,7 +154,7 @@ npm run dev
 | ⚡ 代谢 | 空腹血糖 | 血糖管理，糖尿病筛查 |
 | 🔥 炎症 | CRP（C反应蛋白） | 非特异性炎症标志物 |
 
-### 健康状态等级
+### 🎨 健康状态等级
 
 | 状态 | 颜色 | 含义 |
 |---|---|---|
@@ -124,7 +214,7 @@ npm run dev
 
 ```bash
 npm run build      # 构建
-npm run preview    # 本地预览生产版本
+npm run preview   # 本地预览生产版本
 ```
 
 ### Lint 检查
@@ -221,7 +311,7 @@ mockApi.ts  ── 是否配置了 VITE_ARK_API_KEY？
 | **动画效果** | Motion (Framer Motion 替代方案) |
 | **AI 引擎** | 豆包 Doubao Seed 2.0（通过 OpenAI 兼容接口调用火山引擎 Ark） |
 | **图标库** | Lucide React |
-| **AI SDK** | OpenAI JS SDK (`openai` 包，配置 `baseURL` 为豆包端点) |
+| **AI SDK** | OpenAI JS SDK（`openai` 包，配置 `baseURL` 为豆包端点） |
 
 ---
 
