@@ -1,0 +1,6 @@
+{
+  "name": "HealthLens AI",
+  "description": "Multimodal lab report parsing and health metrics tracking dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
