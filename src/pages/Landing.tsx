@@ -108,10 +108,18 @@ function BiomarkerMini({ name, value, status, color }: { name: string; value: st
 export default function Landing() {
   return (
     <div className="min-h-screen bg-white font-sans overflow-x-hidden">
-      {/* Background Decorations */}
-      <div className="fixed top-0 left-0 right-0 h-[500px] bg-gradient-to-b from-brand-50/40 to-transparent pointer-events-none" />
-      <div className="fixed -top-40 -right-40 w-[600px] h-[600px] bg-brand-100/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="fixed top-60 -left-20 w-[400px] h-[400px] bg-teal-50/40 rounded-full blur-3xl pointer-events-none" />
+      {/* ─── Hero Background Image ─── */}
+      <div
+        className="absolute top-0 left-0 w-full h-[720px] pointer-events-none z-0"
+        style={{
+          backgroundImage: `url(/hero.webp)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+        }}
+      >
+        {/* Gradient overlay so text stays readable — adjust /70 /50 /90 values to change image visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/5 to-white/95" />
+      </div>
 
       {/* ─── Navigation ─── */}
       <nav className="relative z-10 max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -136,7 +144,7 @@ export default function Landing() {
       </nav>
 
       {/* ─── Hero Section ─── */}
-      <section className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-28">
+      <section className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-0">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Headline */}
           <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
